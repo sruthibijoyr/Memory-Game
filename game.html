@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <script src="https://kit.fontawesome.com/dda4ff41fe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DotGothic16&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="game-script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <header>
+      <h3 id="timer">TIMER : 60</h3>
+      <h3 id="score">SCORE : 0</h3>
+      <br>
+      <h2 id="level">LEVEL 1</h2>
+    </header>
+    <div class="game-section">
+      <table class="game-grid" id="game-grid">
+    <tr>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner1">
+            <div class="flip-card-front" id="front1" onclick="flipCard(this.id)"><img src="" id="front-img1" alt=""></div>
+            <div class="flip-card-back"><img id="card1" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+     <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner2">
+            <div class="flip-card-front" id="front2" onclick="flipCard(this.id)"><img src="" id="front-img2" alt=""></div>
+            <div class="flip-card-back"><img id="card2" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner3">
+            <div class="flip-card-front" id="front3" onclick="flipCard(this.id)"><img src="" id="front-img3" alt=""></div>
+            <div class="flip-card-back"><img id="card3" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner4">
+            <div class="flip-card-front" id="front4" onclick="flipCard(this.id)"><img src="" id="front-img4" alt=""></div>
+            <div class="flip-card-back"><img id="card4" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner5">
+            <div class="flip-card-front" id="front5" onclick="flipCard(this.id)"><img src="" id="front-img5" alt=""></div>
+            <div class="flip-card-back"><img id="card5" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner6">
+            <div class="flip-card-front" id="front6" onclick="flipCard(this.id)"><img src="" id="front-img6" alt=""></div>
+            <div class="flip-card-back"><img id="card6" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner7">
+            <div class="flip-card-front" id="front7" onclick="flipCard(this.id)"><img src="" id="front-img7" alt=""></div>
+            <div class="flip-card-back"><img id="card7" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner8">
+            <div class="flip-card-front" id="front8" onclick="flipCard(this.id)"><img src="" id="front-img8" alt=""></div>
+            <div class="flip-card-back"><img id="card8" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner9">
+            <div class="flip-card-front" id="front9" onclick="flipCard(this.id)"><img src="" id="front-img9" alt=""></div>
+            <div class="flip-card-back"><img id="card9" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner10">
+            <div class="flip-card-front" id="front10" onclick="flipCard(this.id)"><img src="" id="front-img10" alt=""></div>
+            <div class="flip-card-back"><img id="card10" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner11">
+            <div class="flip-card-front" id="front11" onclick="flipCard(this.id)"><img src="" id="front-img11" alt=""></div>
+            <div class="flip-card-back"><img id="card11" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner12">
+            <div class="flip-card-front" id="front12" onclick="flipCard(this.id)"><img src="" id="front-img12" alt=""></div>
+            <div class="flip-card-back"><img id="card12" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner13">
+            <div class="flip-card-front" id="front13" onclick="flipCard(this.id)"><img src="" id="front-img13" alt=""></div>
+            <div class="flip-card-back"><img id="card13" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner14">
+            <div class="flip-card-front" id="front14" onclick="flipCard(this.id)"><img src="" id="front-img14" alt=""></div>
+            <div class="flip-card-back"><img id="card14" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner15">
+            <div class="flip-card-front" id="front15" onclick="flipCard(this.id)"><img src="" id="front-img15" alt=""></div>
+            <div class="flip-card-back"><img id="card15" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+      <td><div class="flip-card">
+          <div class="flip-card-inner" id="inner16">
+            <div class="flip-card-front" id="front16" onclick="flipCard(this.id)"><img src="" id="front-img16" alt=""></div>
+            <div class="flip-card-back"><img id="card16" src="" alt=""></div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+    </div>
+  
+<button onclick="start()" id="start-btn">START</button>
+  </body>
+</html>
